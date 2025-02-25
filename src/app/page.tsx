@@ -27,16 +27,16 @@ export default function Home() {
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         />
 
-        <motion.img
+        {/* <motion.img
           src="/target.png"
           alt="Target"
-          className="absolute bottom-20 md:bottom-0 w-32 sm:w-48 md:w-64"
+          className="absolute bottom-10 sm:bottom-16 md:bottom-20 w-32 sm:w-48 md:w-64"
           initial={{ y: 20 }}
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        />
+        /> */}
 
-        <h2 className="text-gray-600 text-sm sm:text-base md:text-lg uppercase">
+        <h2 className="text-gray-600 text-sm sm:text-base md:text-lg uppercase z-10">
           I T E K S E O &nbsp; A G E N C Y
         </h2>
 
@@ -52,8 +52,17 @@ export default function Home() {
           Ensuring the best return on investment for your bespoke SEO campaign
           requirement. Get your free SEO Analysis.
         </p>
-        <div className="mt-6 flex items-center">
-          <button className="flex items-center z-10 gap-2 px-6 py-3 bg-[#6640F4] text-white rounded-lg hover:bg-purple-700 transition font-medium">
+        <div className="relative mt-10  flex flex-col items-center">
+          <motion.img
+            src="/target.png"
+            alt="Target"
+            className="absolute top-0 w-32 sm:w-48 md:w-64"
+            initial={{ y: 20 }}
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          />
+
+          <button className="flex items-center gap-2 px-6 py-3 bg-[#6640F4] text-white rounded-lg hover:bg-purple-700 transition font-medium z-10">
             <FaGooglePlay className="text-xl" />
             <span>Get it on Google Play</span>
           </button>
