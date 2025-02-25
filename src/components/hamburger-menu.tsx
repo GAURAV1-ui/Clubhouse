@@ -13,12 +13,12 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden shadow-md p-4">
+    <div className="md:hidden p-4">
       <div className="flex justify-between items-center w-full">
         <NextLink href="/" passHref>
-          <h1 className="text-xl font-bold">Clubhouse</h1>
+          <h1 className="text-xl text-black font-bold">Clubhouse</h1>
         </NextLink>
-        <motion.button className="border border-gray-300 rounded-full p-2" onClick={() => setIsOpen(!isOpen)}>
+        <motion.button className="text-black p-2" onClick={() => setIsOpen(!isOpen)}>
           <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
         </motion.button>
       </div>
