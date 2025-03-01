@@ -6,6 +6,7 @@ import About from "@/components/about";
 import Download from "@/components/download";
 import ContactForm from "@/components/contact";
 import Footer from "@/components/footer";
+import ScrollingImage from "@/components/scrollImage";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Intro />
       <About/>
       <Download/>
+      <ScrollingImage/>
       <ContactForm/>
       <Footer/>
     </div>

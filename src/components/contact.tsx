@@ -79,15 +79,16 @@ export default function ContactForm() {
               <p className="text-red-200 text-sm">{errors.email.message}</p>
             )}
             <select
-  {...register("inquiry")}
-  className="w-full p-4 text-sm border border-gray-300 rounded-full text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-white"
->
-  <option value="" className="text-gray-400 opacity-60">How can we help you?</option>
-  <option value="service">Service Inquiry</option>
-  <option value="support">Customer Support</option>
-  <option value="other">Other</option>
-</select>
-
+              {...register("inquiry")}
+              className="w-full p-4 text-sm border border-gray-300 rounded-full text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <option value="" className="text-gray-400 opacity-60">
+                How can we help you?
+              </option>
+              <option value="service">Service Inquiry</option>
+              <option value="support">Customer Support</option>
+              <option value="other">Other</option>
+            </select>
 
             {errors.inquiry && (
               <p className="text-red-200 text-sm">{errors.inquiry.message}</p>

@@ -5,10 +5,8 @@ const Footer = () => {
   return (
     <footer className="bg-[#F0EFF5] w-full py-20 text-center">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent mb-10">
-          BRAND LO
-        </h2>
-
+        <img src="/logo.png" alt="Logo" className="w-48 mx-auto" />
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <div className="flex flex-col items-center">
             <FaMapMarkerAlt className="text-3xl mb-3 text-blue-500" />
