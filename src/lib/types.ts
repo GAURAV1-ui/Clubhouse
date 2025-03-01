@@ -15,8 +15,6 @@ export type Link = {
   hash: string;
 };
 
-
-
 type About = {
   title: string;
   im: string;

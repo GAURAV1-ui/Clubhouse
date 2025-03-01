@@ -10,13 +10,9 @@ export const links: Link[] = [
       hash: "#about",
     },
     {
-       nameEng: "Blog",
-       hash: "#blog",
-     },
-     {
-      nameEng: "Projects",
-      hash: "#projects",
-    }
+       nameEng: "Features",
+       hash: "#features",
+     }
   ];
 
   

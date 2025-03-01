@@ -7,7 +7,7 @@ export default function Download() {
       <div className="flex flex-col md:flex-row items-center justify-between p-10 rounded-lg mx-auto text-left max-w-6xl">
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
-            Your Notes <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">Security</span>
+            Download <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">App</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
             "I don’t know what else to say, this is something that you haven’t seen before. Unique design, lightweight, and outstanding support. Itkeseo always a pleasure to work!"

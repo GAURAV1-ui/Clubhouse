@@ -11,12 +11,22 @@ import ScrollingImage from "@/components/scrollImage";
 export default function Home() {
   return (
     <div>
-      <Intro />
-      <About/>
-      <Download/>
-      <ScrollingImage/>
-      <ContactForm/>
-      <Footer/>
+      <section id="intro">
+        <Intro />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="download">
+        <Download />
+      </section>
+      <section id="features">
+        <ScrollingImage />
+      </section>
+      <section id="contact">
+        <ContactForm />
+      </section>
+      <Footer />
     </div>
   );
 }

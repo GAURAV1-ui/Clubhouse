@@ -15,9 +15,19 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
   return (
     <div className="md:hidden p-4">
       <div className="flex justify-between items-center w-full">
-        <NextLink href="/" passHref>
-          <h1 className="text-xl text-black font-bold">Clubhouse</h1>
-        </NextLink>
+      <NextLink href="/" passHref>
+            <motion.div
+              className="cursor-pointer"
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+            >
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="w-24 h-16 sm:w-28 sm:h-18 md:w-32 md:h-20 lg:w-36 lg:h-24"
+              />
+            </motion.div>
+          </NextLink>
         <motion.button className="text-black p-2" onClick={() => setIsOpen(!isOpen)}>
           <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
         </motion.button>

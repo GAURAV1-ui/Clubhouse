@@ -30,16 +30,16 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4">
-      <div className="w-full max-w-6xl bg-gradient-to-br from-blue-500 to-purple-500 p-8 rounded-xl shadow-xl">
-        <h2 className="text-3xl font-bold text-center text-white mb-4">
-          Get free <span className="text-yellow-300">consultation</span>
+    <div className="flex items-center justify-center min-h-screen p-4" id="contact">
+      <div className="w-full max-w-6xl bg-gradient-to-br from-blue-100 to-purple-200 p-8 rounded-xl">
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-4">
+          Contact <span className="text-purple-600">Now</span>
         </h2>
-        <p className="text-center text-gray-100 mb-6">
+        <p className="text-center text-gray-700 mb-6">
           We will contact you within 24h.
         </p>
         {submitted ? (
-          <p className="text-green-200 text-center">
+          <p className="text-green-700 text-center font-semibold">
             Thank you! Your request has been submitted.
           </p>
         ) : (
@@ -47,42 +47,42 @@ export default function ContactForm() {
             onSubmit={handleSubmit(onSubmit)}
             className="space-y-6 max-w-4xl mx-auto"
           >
-            <p className="text-center text-red-200">
-              The field is required mark as *
+            <p className="text-center text-red-500">
+              Fields marked with * are required.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 {...register("name")}
                 placeholder="Name *"
-                className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <input
                 {...register("email")}
                 placeholder="Email Address *"
-                className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <input
                 {...register("phone")}
                 placeholder="Phone Number (optional)"
-                className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <input
                 {...register("website")}
                 placeholder="Your Website (optional)"
-                className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                className="w-full p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
             {errors.name && (
-              <p className="text-red-200 text-sm">{errors.name.message}</p>
+              <p className="text-red-500 text-sm">{errors.name.message}</p>
             )}
             {errors.email && (
-              <p className="text-red-200 text-sm">{errors.email.message}</p>
+              <p className="text-red-500 text-sm">{errors.email.message}</p>
             )}
             <select
               {...register("inquiry")}
-              className="w-full p-4 text-sm border border-gray-300 rounded-full text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-4 text-sm border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
-              <option value="" className="text-gray-400 opacity-60">
+              <option value="" className="text-gray-500">
                 How can we help you?
               </option>
               <option value="service">Service Inquiry</option>
@@ -91,21 +91,21 @@ export default function ContactForm() {
             </select>
 
             {errors.inquiry && (
-              <p className="text-red-200 text-sm">{errors.inquiry.message}</p>
+              <p className="text-red-500 text-sm">{errors.inquiry.message}</p>
             )}
             <textarea
               {...register("message")}
               placeholder="How can we help you?"
-              className="w-full p-4 text-sm border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-white h-40"
+              className="w-full p-4 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 h-40"
             ></textarea>
             {errors.message && (
-              <p className="text-red-200 text-sm">{errors.message.message}</p>
+              <p className="text-red-500 text-sm">{errors.message.message}</p>
             )}
             <div className="flex items-center gap-2">
               <input type="checkbox" id="terms" className="w-4 h-4" required />
-              <label htmlFor="terms" className="text-sm text-white">
-                By submitting, I’m agreed to the{" "}
-                <a href="#" className="text-yellow-300 underline">
+              <label htmlFor="terms" className="text-sm text-gray-800">
+                By submitting, I agree to the{" "}
+                <a href="#" className="text-blue-600 underline">
                   Terms & Conditions
                 </a>
               </label>
@@ -113,7 +113,7 @@ export default function ContactForm() {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="w-full max-w-sm bg-yellow-300 text-blue-900 p-4 text-sm rounded-full font-semibold hover:bg-yellow-400 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full max-w-sm bg-blue-500 text-white p-4 text-sm rounded-lg font-semibold hover:bg-blue-600 transition disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Submitting..." : "Send Your Request"}
