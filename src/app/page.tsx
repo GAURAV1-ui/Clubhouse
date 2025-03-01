@@ -1,14 +1,18 @@
 "use client";
 import React from "react";
 
-import TestimonialCarousel from "@/components/testimonial";
 import Intro from "@/components/intro";
+import About from "@/components/about";
+import Download from "@/components/download";
+import ContactForm from "@/components/contact";
 
 export default function Home() {
   return (
     <div>
       <Intro />
-      <TestimonialCarousel />
+      <About/>
+      <Download/>
+      <ContactForm/>
     </div>
   );
 }

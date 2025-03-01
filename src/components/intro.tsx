@@ -5,13 +5,13 @@ import { FaGooglePlay } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <div className="bg-[#DEE0F2] md:m-8 md:rounded-3xl">
+    <div className="bg-[#DEE0F2] md:m-8 md:rounded-3xl ">
       <Navbar />
-      <div className="relative flex flex-col items-center mt-20 min-h-screen px-4 text-center">
+      <div className="relative flex flex-col items-center min-h-[90vh] py-20 px-4 text-center">
         <motion.img
           src="/hand_megaphone.png"
           alt="Megaphone"
-          className="absolute left-0 top-20 md:-left-10 md:top-10 w-32 sm:w-52 md:w-72"
+          className="absolute left-0 top-20 md:bottom-10 md:-left-10 w-32 sm:w-52 md:w-72"
           initial={{ y: -20 }}
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
@@ -20,7 +20,7 @@ const Intro = () => {
         <motion.img
           src="/rocket.png"
           alt="Rocket"
-          className="absolute right-0 md:-right-4 sm:-right-10 -top-10 sm:bottom-20 w-40 sm:w-64 md:w-96"
+          className="absolute right-0 md:-right-4 sm:-right-10 top-25 md:bottom-1 w-40 sm:w-64 md:w-96"
           initial={{ y: 20 }}
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
@@ -42,16 +42,7 @@ const Intro = () => {
           Ensuring the best return on investment for your bespoke SEO campaign
           requirement. Get your free SEO Analysis.
         </p>
-        <div className="relative mt-10 flex flex-col items-center">
-          <motion.img
-            src="/target.png"
-            alt="Target"
-            className="absolute top-0 w-32 sm:w-48"
-            initial={{ y: 20 }}
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          />
-
+        <div className="mt-10 items-center">
           <button className="flex items-center gap-2 px-6 py-3 bg-[#6640F4] text-white rounded-lg hover:bg-purple-700 transition font-medium z-10">
             <FaGooglePlay className="text-xl" />
             <span>Get it on Google Play</span>
