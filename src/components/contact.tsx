@@ -24,7 +24,7 @@ export default function ContactForm() {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = (data:any) => {
     console.log('Form Data:', data);
     setSubmitted(true);
   };

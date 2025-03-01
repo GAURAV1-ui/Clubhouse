@@ -5,6 +5,7 @@ import Intro from "@/components/intro";
 import About from "@/components/about";
 import Download from "@/components/download";
 import ContactForm from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Download/>
       <ContactForm/>
+      <Footer/>
     </div>
   );
 }
