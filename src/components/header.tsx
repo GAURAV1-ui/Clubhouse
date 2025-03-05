@@ -31,25 +31,27 @@ export default function Header({ links }: HeaderProps) {
         </div>
 
         <motion.ul
-          className="flex gap-6"
+          className="flex gap-6 items-center"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          {links.map((link) => (
-            <motion.li
-              key={link.hash}
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-            >
-              <ScrollLink
-                to={link.hash.replace("#", "")} // Remove `#` for smooth scrolling
-                smooth={true}
-                duration={500}
-                className="cursor-pointer hover:text-blue-600 transition text-black text-sm font-semibold"
+          {links.map((link, index) => (
+            <React.Fragment key={link.hash}>
+              <motion.li
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
               >
-                {link.nameEng}
-              </ScrollLink>
-            </motion.li>
+                <ScrollLink
+                  to={link.hash.replace("#", "")} // Remove `#` for smooth scrolling
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:text-blue-600 transition text-black text-sm font-semibold"
+                >
+                  {link.nameEng}
+                </ScrollLink>
+              </motion.li>
+              {index < links.length - 1 && <span className="text-black">•</span>}
+            </React.Fragment>
           ))}
         </motion.ul>
 
@@ -60,7 +62,7 @@ export default function Header({ links }: HeaderProps) {
           animate={{ x: 0, opacity: 1 }}
           onClick={() => setIsSidebarOpen(true)}
         >
-          Contact Us
+          Download App
         </motion.button>
       </header>
     </>

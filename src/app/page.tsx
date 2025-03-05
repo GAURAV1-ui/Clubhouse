@@ -17,13 +17,13 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
+      <section id="#features">
+        <ScrollingImage />
+      </section>
       <section id="download">
         <Download />
       </section>
-      <section id="features">
-        <ScrollingImage />
-      </section>
-      <section id="contact">
+      <section id="contact-form">
         <ContactForm />
       </section>
       <Footer />

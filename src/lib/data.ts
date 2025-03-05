@@ -12,7 +12,11 @@ export const links: Link[] = [
     {
        nameEng: "Features",
        hash: "#features",
-     }
+     },
+     {
+      nameEng: "Contact",
+      hash: "#contact",
+    },  
   ];
 
   

@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <div className="flex items-center justify-center min-h-screen p-4" id="contact">
-      <div className="w-full max-w-6xl bg-gradient-to-br from-blue-100 to-purple-200 p-8 rounded-xl">
+      <div className="w-full max-w-6xl bg-[#EDEDF6] p-8 rounded-xl">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-4">
           Contact <span className="text-purple-600">Now</span>
         </h2>
