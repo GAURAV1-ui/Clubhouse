@@ -133,10 +133,11 @@ export default function ContactForm() {
           </div>
 
           <img
-            src="/contact_message.png"
-            alt="Small Decorative Right"
-            className="absolute top-6 -right-20 w-30 h-30 z-0"
-          />
+  src="/contact_message.png"
+  alt="Small Decorative Right"
+  className="absolute top-6 -right-20 w-30 h-30 z-0 hidden md:block"
+/>
+
         </div>
       </div>
     </div>
