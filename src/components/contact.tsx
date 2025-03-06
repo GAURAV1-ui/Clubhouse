@@ -42,7 +42,7 @@ export default function ContactForm() {
       </div>
 
       <div className="flex items-center justify-center ">
-        <div className="w-full max-w-7xl bg-[#F0EFF5] px-4 py-20 rounded-3xl">
+        <div className="w-full max-w-7xl border-t-8 border-[#6640F4] bg-[#F0EFF5] px-4 py-20 rounded-3xl">
           {submitted ? (
             <p className="text-green-700 text-center font-semibold">
               Thank you! Your request has been submitted.
@@ -111,7 +111,7 @@ export default function ContactForm() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="w-full max-w-sm bg-blue-500 text-white p-4 text-sm rounded-3xl font-semibold hover:bg-blue-600 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full max-w-sm bg-[#6640F4] text-white p-4 text-sm rounded-3xl font-semibold hover:bg-blue-600 transition disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Send Your Request"}
