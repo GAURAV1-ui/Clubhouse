@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="max-w-7xl mx-auto p-4">
+    <div className="max-w-6xl mx-auto p-4">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center p-4 rounded-lg mx-auto text-left ">
         <div className="md:w-[40%]">
         <div className="bg-purple-600 text-white p-6 rounded-full inline-block text-5xl">

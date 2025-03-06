@@ -32,11 +32,15 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
             <img
               src="/logo.png"
               alt="Logo"
-              className="w-24 h-16 sm:w-28 sm:h-18 md:w-32 md:h-20 lg:w-36 lg:h-24"
+              className="w-16 h-10 sm:w-20 sm:h-12 md:w-24 md:h-14 lg:w-28 lg:h-16"
             />
           </motion.div>
         </NextLink>
-        <motion.button className="text-black p-2" onClick={() => setIsOpen(!isOpen)}>
+
+        <motion.button
+          className="text-black p-2"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
         </motion.button>
       </div>

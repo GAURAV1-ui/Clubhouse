@@ -13,7 +13,7 @@ export default function Header({ links }: HeaderProps) {
 
   return (
     <>
-      <header className="hidden md:flex items-center justify-between w-full px-8">
+      <header className="hidden md:flex items-center justify-between w-full px-8 py-4">
         <div className="flex items-center">
           <NextLink href="/" passHref>
             <motion.div
@@ -24,7 +24,7 @@ export default function Header({ links }: HeaderProps) {
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="w-24 h-16 sm:w-28 sm:h-18 md:w-32 md:h-20 lg:w-36 lg:h-24"
+                className="w-16 h-10 sm:w-16 sm:h-10 md:w-16 md:h-10 lg:w-20 lg:h-10"
               />
             </motion.div>
           </NextLink>
@@ -50,7 +50,9 @@ export default function Header({ links }: HeaderProps) {
                   {link.nameEng}
                 </ScrollLink>
               </motion.li>
-              {index < links.length - 1 && <span className="text-black">•</span>}
+              {index < links.length - 1 && (
+                <span className="text-black">•</span>
+              )}
             </React.Fragment>
           ))}
         </motion.ul>
