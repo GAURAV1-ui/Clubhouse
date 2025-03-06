@@ -4,7 +4,7 @@ import { FaGooglePlay } from "react-icons/fa";
 export default function Download() {
   return (
     <div className="flex items-center justify-center py-8">
-      <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 rounded-lg mx-auto text-left max-w-7xl w-full">
+      <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12 rounded-lg mx-auto text-left max-w-7xl w-full relative">
         <div className="md:w-[40%] space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold text-black leading-tight">
             Download{" "}
@@ -24,10 +24,15 @@ export default function Download() {
             </button>
           </div>
         </div>
-        <div className="md:w-[60%] flex justify-center mt-10 md:mt-0">
+        <div className="md:w-[60%] flex justify-center mt-10 md:mt-0 relative">
+
+          <div className="absolute w-[80%] h-[80%] rounded-full bg-cover bg-center animate-spin-extra-slow z-0"
+            style={{ backgroundImage: "url('/bubble.png')" }}
+          ></div>
+
           <img
             src="/download.png"
-            className="w-[80%] max-w-[500px] md:max-w-[600px]"
+            className="w-[70%] max-w-[500px] md:max-w-[600px] relative"
             alt="Download App"
           />
         </div>
