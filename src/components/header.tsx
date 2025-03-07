@@ -42,7 +42,7 @@ export default function Header({ links }: HeaderProps) {
                 animate={{ y: 0, opacity: 1 }}
               >
                 <ScrollLink
-                  to={link.hash.replace("#", "")} // Remove `#` for smooth scrolling
+                  to={link.hash.replace("#", "")}
                   smooth={true}
                   duration={500}
                   className="cursor-pointer hover:text-blue-600 transition text-black text-sm font-semibold"

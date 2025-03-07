@@ -14,7 +14,7 @@ const schema = z.object({
   message: z.string().min(5, "Message should be at least 5 characters"),
 });
 
-export default function ContactForm() {
+export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
@@ -30,7 +30,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="p-4" id="contact">
+    <div className="p-4">
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
           Contact{" "}
@@ -133,11 +133,10 @@ export default function ContactForm() {
           </div>
 
           <img
-  src="/contact_message.png"
-  alt="Small Decorative Right"
-  className="absolute top-6 -right-20 w-30 h-30 z-0 hidden md:block"
-/>
-
+            src="/contact_message.png"
+            alt="Small Decorative Right"
+            className="absolute top-6 -right-20 w-30 h-30 z-0 hidden md:block"
+          />
         </div>
       </div>
     </div>
