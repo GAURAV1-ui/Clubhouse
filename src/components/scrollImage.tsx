@@ -17,13 +17,13 @@ export default function PhoneCarousel() {
     cssEase: "ease-in-out",
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024, // Tablets
         settings: {
           slidesToShow: 4,
         },
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768, // Mobile (now showing 3 slides)
         settings: {
           slidesToShow: 3,
         },
@@ -33,20 +33,20 @@ export default function PhoneCarousel() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
-      <div className="relative w-full h-[350px] flex justify-center items-center">
+      <div className="relative w-full h-[280px] sm:h-[320px] flex justify-center items-center">
         <img
           src="/hand.png"
           alt="Hand Holding Phone"
-          className="absolute -top-8 ml-16 w-[420px] h-auto z-10 pointer-events-none"
+          className="absolute top-0 sm:-top-6 md:-top-8 w-[200px] sm:w-[320px] md:w-[400px] h-auto z-10 pointer-events-none"
         />
         <div className="w-full overflow-hidden">
           <Slider {...settings}>
             {images.map((img, index) => (
-              <div key={index} className="px-4">
+              <div key={index} className="px-2 sm:px-3">
                 <img
                   src={img}
                   alt={`Screen ${index + 1}`}
-                  className="w-[70%] h-[40%] rounded-lg"
+                  className="w-[85%] sm:w-[75%] h-[40%] rounded-lg"
                 />
               </div>
             ))}

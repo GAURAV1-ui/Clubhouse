@@ -5,7 +5,6 @@ export default function About() {
     <div className="max-w-6xl mx-auto p-4">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12 p-4 rounded-lg mx-auto text-left">
         
-        {/* Text Section */}
         <div className="md:w-[40%] text-center md:text-left">
           <div className="bg-purple-600 text-white p-3 rounded-full inline-block text-4xl sm:text-5xl md:text-6xl">
             &ldquo;
@@ -27,16 +26,15 @@ export default function About() {
           <p className="text-gray-500 text-sm sm:text-base">"Founder & CEO"</p>
         </div>
 
-        {/* Image Section */}
         <div className="md:w-[60%] flex justify-center mt-10 md:mt-0 relative h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px]">
           <div
-            className="absolute w-[70%] sm:w-[80%] md:w-[90%] h-[60%] sm:h-[70%] md:h-[80%] rounded-full bg-cover bg-center animate-spin-extra-slow z-0"
+            className="absolute w-[80%] md:w-[90%] h-[60%] sm:h-[70%] md:h-[80%] rounded-full bg-cover bg-center animate-spin-extra-slow z-0"
             style={{ backgroundImage: "url('/bubble.png')" }}
           ></div>
 
           <img
             src="/users.png"
-            className="w-[60%] sm:w-[70%] md:w-[80%] object-contain relative"
+            className="w-[70%] md:w-[80%] object-contain relative"
             alt="Download App"
           />
         </div>

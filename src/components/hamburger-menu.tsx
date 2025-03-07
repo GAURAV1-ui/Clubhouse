@@ -32,7 +32,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
             <img
               src="/logo.png"
               alt="Logo"
-              className="w-16 h-10 sm:w-20 sm:h-12 md:w-24 md:h-14 lg:w-28 lg:h-16"
+              className="w-24 h-8"
             />
           </motion.div>
         </NextLink>

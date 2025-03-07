@@ -24,7 +24,7 @@ export default function Header({ links }: HeaderProps) {
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="w-16 h-10 sm:w-16 sm:h-10 md:w-16 md:h-10 lg:w-20 lg:h-10"
+                className="w-30 h-10"
               />
             </motion.div>
           </NextLink>
