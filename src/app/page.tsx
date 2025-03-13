@@ -24,8 +24,9 @@ export default function Home() {
         <Download />
       </section>
       <section id="contact">
-        <Contact/>
+        <Contact />
       </section>
+
       <Footer />
     </div>
   );

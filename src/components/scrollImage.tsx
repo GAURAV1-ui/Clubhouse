@@ -20,7 +20,6 @@ export default function PhoneCarousel() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Force re-render after component mount
   useEffect(() => {
     setLoaded(true);
   }, []);
@@ -43,17 +42,15 @@ export default function PhoneCarousel() {
 
   return (
     <div className="bg-gray-100 pt-10">
-      {/* Responsive Heading */}
       <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-black text-center leading-snug sm:leading-tight px-4">
-        Contact{" "}
+        Feat
         <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-          Now
+          ures
         </span>
       </h1>
 
       <div className="flex items-center justify-center py-20 md:py-40 px-4">
         <div className="flex w-full max-w-[1200px] justify-between items-center">
-          {/* Left Preview Image */}
           <div className="w-[100px] md:w-[180px] flex justify-center">
             <img
               src={getPreviewImages(-1)}
@@ -62,9 +59,8 @@ export default function PhoneCarousel() {
             />
           </div>
 
-          {/* Main Phone Container */}
           <div className="relative w-[40%] max-w-[350px] h-auto flex justify-center items-center mx-4">
-            {/* Hand Holding Phone */}
+
             <img
               src="/hand.png"
               alt="Hand Holding Phone"
@@ -96,7 +92,6 @@ export default function PhoneCarousel() {
             </div>
           </div>
 
-          {/* Right Preview Image */}
           <div className="w-[100px] md:w-[180px] flex justify-center">
             <img
               src={getPreviewImages(1)}

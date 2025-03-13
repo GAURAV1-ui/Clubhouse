@@ -35,7 +35,7 @@ export default function Contact() {
         <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
           Contact{" "}
           <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-            Now
+            Us
           </span>
         </h1>
         <p className="text-gray-700 mt-2">We will contact you within 24h.</p>
@@ -135,7 +135,7 @@ export default function Contact() {
           <img
             src="/contact_message.png"
             alt="Small Decorative Right"
-            className="absolute top-6 -right-20 w-30 h-30 z-0 hidden md:block"
+            className="absolute top-6 -right-10 w-40 h-32 z-0 hidden md:block"
           />
         </div>
       </div>

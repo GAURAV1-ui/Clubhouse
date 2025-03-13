@@ -1,4 +1,4 @@
-import { Link, ProjectInfo } from "./types";
+import { Link } from "./types";
 
 export const links: Link[] = [
     {
