@@ -25,13 +25,13 @@ export default function Header({ links }: HeaderProps) {
 
   return (
     <header
-      className={`transition-all duration-300 z-50 ${
+      className={`hidden md:flex transition-all duration-300 z-50 ${
         isSticky
           ? "fixed top-0 left-0 w-full bg-white shadow-md py-3"
           : "relative bg-transparent py-4"
       }`}
     >
-      <div className="hidden md:flex items-center justify-between w-full px-8">
+      <div className="flex items-center justify-between w-full px-8">
         <NextLink href="/" passHref>
           <motion.div className="cursor-pointer" initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }}>
             <img src="/logo.png" alt="Logo" className="w-30 h-10" />
