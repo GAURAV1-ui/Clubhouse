@@ -1,32 +1,17 @@
+"use client";
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import NextLink from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { Link } from "@/lib/types";
 import Hamburger from "hamburger-react";
 import { FaGooglePlay } from "react-icons/fa";
-import { useRouter } from "next/navigation";
 
 type HamburgerMenuProps = { links: Link[] };
 
 const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
-
-  const handleScroll = (hash: string) => {
-    setIsOpen(false);
-
-    // Scroll smoothly to the section
-    const target = document.querySelector(hash);
-    if (target) {
-      window.scrollTo({
-        top: target.getBoundingClientRect().top + window.scrollY - 80,
-        behavior: "smooth",
-      });
-
-      // Update the URL without a full reload
-      router.push(hash, { scroll: false });
-    }
-  };
 
   return (
     <div className="md:hidden p-4">
@@ -42,17 +27,18 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
         </NextLink>
 
         <div className="flex items-center gap-2">
-          <motion.button
-            className="flex items-center gap-2 px-4 py-2 font-semibold text-sm rounded-full border-2 bg-[#6640f4] transition hover:bg-[#500FE5] text-white"
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+
+        <ScrollLink
+            to="download"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            spy={true}
+            className="flex items-center gap-2 px-4 py-2 font-semibold text-sm rounded-full border-2 bg-[#6640f4] transition hover:bg-[#500FE5] text-white cursor-pointer"
           >
             <FaGooglePlay size={18} />
-          </motion.button>
-          <motion.button
-            className="text-black p-2"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          </ScrollLink>
+          <motion.button className="text-black p-2" onClick={() => setIsOpen(!isOpen)}>
             <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
           </motion.button>
         </div>
@@ -67,13 +53,18 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
             className="mt-2 flex flex-col bg-white shadow-lg rounded-lg p-4"
           >
             {links.map((link) => (
-              <button
+              <ScrollLink
                 key={link.hash}
-                onClick={() => handleScroll(link.hash)}
-                className="py-2 px-4 text-center text-gray-800 hover:text-blue-600 transition"
+                to={link.hash.replace("#", "")}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                spy={true}
+                onClick={() => setIsOpen(false)}
+                className="py-2 px-4 text-center text-gray-800 hover:text-blue-600 transition cursor-pointer"
               >
                 {link.nameEng}
-              </button>
+              </ScrollLink>
             ))}
           </motion.div>
         )}
