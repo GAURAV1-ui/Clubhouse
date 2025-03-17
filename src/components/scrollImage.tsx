@@ -24,14 +24,14 @@ export default function ScrollingImage() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
     ],
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full pt-16 pb-24 my-5 bg-[#F9FAFB]">
+    <div className="relative flex flex-col items-center justify-center w-full my-5 pt-16 pb-24 bg-[#F9FAFB]">
       <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-black text-center leading-snug sm:leading-tight px-4 mb-20">
         Feat
         <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
@@ -46,7 +46,7 @@ export default function ScrollingImage() {
               <img
                 src={img}
                 alt={`Feature ${index + 1}`}
-                className="w-[55%] lg:w-[50%] xl:w-[45%] 2xl:w-[40%] object-cover rounded-lg shadow-md mx-auto"
+                className="w-[70%] md:w-[60%] lg:w-[55%] xl:w-[50%] object-cover rounded-lg shadow-lg mx-auto"
               />
             </div>
           ))}
