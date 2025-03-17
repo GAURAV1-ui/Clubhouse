@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div className="bg-[#DEE0F2] md:m-8 md:rounded-3xl ">
       <Navbar />
-      <div className="relative flex flex-col items-center min-h-[90vh] py-20 px-4 text-center">
+      <div className="relative flex flex-col items-center py-20 px-4 text-center">
         <motion.img
           src="/hand_megaphone.png"
           alt="Megaphone"

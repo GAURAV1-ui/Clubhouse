@@ -3,7 +3,7 @@ import { FaGooglePlay } from "react-icons/fa";
 
 export default function Download() {
   return (
-    <div className="flex items-center justify-center py-8">
+    <div className="flex items-center justify-center py-8 bg-white">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 rounded-lg mx-auto text-left max-w-7xl w-full relative">
         
 

@@ -3,7 +3,10 @@ import { FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F0EFF5] w-full py-20 text-center">
+    <footer className="w-full py-20 text-center">
+<div className="w-full h-[1px] bg-[#EEEE] my-6"></div>
+
+
       <div className="container mx-auto px-6">
         <img src="/logo.png" alt="Logo" className="w-48 mx-auto py-8" />
         
@@ -30,6 +33,7 @@ const Footer = () => {
             <p className="text-sm text-gray-700">Our WhatsApp</p>
           </div>
         </div>
+
         <div className="mt-10 text-sm font-normal text-gray-600">
           <p>
             Copyright © 2024 Zone.credit by White Glass Innovations Pvt. Ltd.

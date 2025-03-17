@@ -66,22 +66,22 @@ export default function Contact() {
                   <input
                     {...register("name")}
                     placeholder="Name *"
-                    className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    className="w-full p-3 text-sm border text-gray-500 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
                   <input
                     {...register("email")}
                     placeholder="Email Address *"
-                    className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    className="w-full p-3 text-sm border text-gray-500 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
                   <input
                     {...register("phone")}
                     placeholder="Phone Number (optional)"
-                    className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    className="w-full p-3 text-sm border text-gray-500 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
                   <input
                     {...register("website")}
                     placeholder="Your Website (optional)"
-                    className="w-full p-3 text-sm border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    className="w-full p-3 text-sm border text-gray-500 border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
                   />
                 </div>
                 {errors.name && (
@@ -98,7 +98,7 @@ export default function Contact() {
                 <textarea
                   {...register("message")}
                   placeholder="How can we help you?"
-                  className="w-full p-4 text-sm border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 h-40"
+                  className="w-full p-4 text-sm border text-gray-500 border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 h-40"
                 ></textarea>
                 {errors.message && (
                   <p className="text-red-500 text-sm">
