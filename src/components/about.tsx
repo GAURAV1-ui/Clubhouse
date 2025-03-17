@@ -4,12 +4,11 @@ export default function About() {
   return (
     <div className="max-w-6xl mx-auto p-4">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12 p-4 rounded-lg mx-auto text-left">
-        
         <div className="md:w-[40%] text-center md:text-left">
           <div className="bg-purple-600 text-white p-3 rounded-full inline-block text-4xl sm:text-5xl md:text-6xl">
             &ldquo;
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-black leading-tight mt-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
             About{" "}
             <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
               Us
@@ -38,7 +37,6 @@ export default function About() {
             alt="Download App"
           />
         </div>
-
       </div>
     </div>
   );

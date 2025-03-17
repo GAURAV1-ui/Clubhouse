@@ -8,12 +8,12 @@ export default function Download() {
         
 
         <div className="md:w-[40%] space-y-4 sm:space-y-6 text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black leading-tight">
-            Download{" "}
-            <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
-              App
-            </span>
-          </h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight">
+          Download{" "}
+          <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
+            App
+          </span>
+        </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700">
             "I don’t know what else to say, this is something that you haven’t
             seen before. Unique design, lightweight, and outstanding support.
